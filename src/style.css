@@ -15,11 +15,13 @@ body {
   background: #fff;
   padding: 1rem;
   border: 1px solid #000;
+  border-radius: 5px;
 }
 
 .board-row {
   background: #fff;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
@@ -33,10 +35,40 @@ body {
   color: #000;
   width: 4rem;
   height: 4rem;
+  border-radius: 2px;
+  border: none;
+  box-shadow: inset .1rem .1rem .2rem rgba(0, 0, 0, .2), inset .1rem .1rem .2rem rgba(0, 0, 0, .9);
+
 }
 
-h2 {
-  font-weight: 600;
+p {
+  font-weight: 100;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.game-info button {
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: .5rem;
+  border-radius: 1rem;
+  font-weight: 100;
+  margin: .5rem 0;
+}
+
+.game-info button:active {
+  border: 2px solid #000;
+}
+
+.game-info button:hover {
+  transform: scale(1.1);
 }
