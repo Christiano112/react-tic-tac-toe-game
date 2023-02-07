@@ -68,7 +68,7 @@ const Board = ({xIsNext, squares, onPlay}) => {
   return (
     <div className='board'>
       <p>{status}</p>
-      <div className="board-row" >
+      <div className="board-row">
       {mySquare.map((s) => (
         <div key={s.id}>
           <Square value={squares[s.index]} onSquareClick={() => handleClick(s.index)} />
@@ -115,9 +115,9 @@ const Game = () => {
       <div className='game-board'>
         <Board xIsNext={xIsNext} squares={currentSquare} onPlay={handlePlay}  />
       </div>
-      <div className='game-info'>
-        <ol>{moves}</ol>
-      </div>
+      <ul className='game-info'>
+        <li>{moves}</li>
+      </ul>
     </div>
   )
 }

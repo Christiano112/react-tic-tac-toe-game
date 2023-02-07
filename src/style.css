@@ -55,6 +55,20 @@ p {
   gap: 3rem;
 }
 
+.game-info {
+  margin-top: 10rem;
+}
+
+.game-info ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+}
+
+.game-info li {
+  list-style: none;
+}
+
 .game-info button {
   background: #fff;
   border: none;
